@@ -1,0 +1,12 @@
+{
+"test": {
+    "name": "Liv",
+    "isHot" : true,
+    "Date": "Date()"
+     },
+"test2": {   
+    "name": "Liv",
+    "isHot" : false,
+    "Date": "Date(2026, 2, 4)"
+    }
+}
