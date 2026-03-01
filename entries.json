@@ -1,11 +1,10 @@
-{
-"test": {
-    "isHot" : true,
-    "Date": "Date()"
-     },
-"test2": {   
-    "name": "Liv",
-    "isHot" : false,
-    "Date": "Date(2026, 2, 4)"
+[
+    {
+        "isHot": true,
+        "Date": "2011-11-05T14:48:00.000Z"
+    },
+    {
+        "isHot": false,
+        "Date": "2011-10-05T14:48:00.000Z"
     }
-}
+]
