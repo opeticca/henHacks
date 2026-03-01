@@ -1,0 +1,37 @@
+# Gilbert Water Solution
+
+## Descriptio
+
+Gilbert Water Solution is a crowdsourced website created by students at the University of Delaware for the 2026 HenHacks Hackathon. As residents of Gilbert, we frequently experience cold showers due to the inconsistency of the hot water. This is a common and frustrating issue for lots of students, so we wanted to create a solution that could help our community stay informed.
+
+Participating in the Beginner Track and the Community Wellness & Social Connections category, we created a website where Gilbert residents can report and track the current water temperature status. By allowing students to submit tips, our website helps others decide the best time to shower and creates shared awareness within the Gilbert community.
+
+## Features
+- Styled Using CSS
+- Crowdsourcing techniquue
+- Submitting Tips
+
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+
+## Installation / How to Run
+1. Clone the repository:
+   git clone https://github.com/your-username/project-name.git
+2. Open the folder.
+3. Open `index.html` in your browser.
+
+## Project Structure
+- index.html – Main page
+- about.html – About page
+- tip.html - Submitting a tip page
+
+## Future Improvements
+- Add responsive design
+- Improve styling
+- Create a Historu page that shows all the submitted tips
+
+## Contributors
+- Michelle Ratanraj
+- Olivia Peticca
