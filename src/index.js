@@ -1,28 +1,16 @@
-const tip = document.querySelector(".tip");
-
-async function addToJson(temperature, date){
-    let entriesText= localStorage.getItem("entries");
-    if(entriesText == null){
-        let fetched = await fetch("/entries.json");
-        entriesText= await fetched.text()
-    }
-    let currentdate = (new Date()).toISOString();
-    let entries = JSON.parse(entriesText); 
-    let isHot = (temperature === "hot");
-    
-    entries.push(
-        {
-            "isHot": isHot,
-            "date": currentdate,
-        }
-    ) 
-
-    localStorage.setItem("entries", JSON.stringify(entries));
+let entriesText = localStorage.getItem("entries");
+if (entriesText == null) {
+    let fetched = await fetch("../entries.json");
+    entriesText = await fetched.text();
 }
-
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
-    const temperature = document.querySelector('input[name="temp-select"]:checked');
-    addToJson(temperature.value, time.value);
+let entries = JSON.parse(entriesText);
+let entry = entries.at(-1);
+let mainTemp = document.querySelector(".hot-cold");
+let emoji = document.querySelector(".image-hot-cold");
+if (entry.isHot) {
+    mainTemp.innerText = "hot";
+    emoji.src = "images/hot.webp";
+} else {
+    mainTemp.innerText = "cold";
+    emoji.src = "images/cold.webp";
 }
-
